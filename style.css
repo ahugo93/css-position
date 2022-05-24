@@ -1,22 +1,100 @@
-.parent{
+body{
+    height: 100vh;
+}
+ .parent{
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background: gray;
+    background-color: grey;
 }
 
-.static{
+/* .static{
     position: static;
-}
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
 .fixed{
     position: fixed;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
 }
 .sticky{
     position: sticky;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+     background-color: yellow;
 }
-.relative{
+.dice{
     position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 10px;
+}
+.point{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    left: 20%;
+    top: 20%;
+}
+.point2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    left: 60%;
+    top: 60%;
+    
 }
 .absolute{
     position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+/* .placeholder{  */
+    /* height: 600px; */
+    /* width: 200px; */
+    /* background-color: purple; */
+/* } */
+.ball-container{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    color: white;
+
+}
+.ball1{
+    z-index: 2;
+    position: absolute;
+    color: red;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.ball2{
+    z-index: 1;
+    position: absolute;
+    color: blue;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.ball3{
+    z-index: 0;
+    position: absolute;
+    color: yellow;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
 }
